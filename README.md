@@ -21,7 +21,6 @@ npm test
 
 > Edit file server.config.js
 ``` bash
-# install dependencies
     env: {
       "NODE_ENV": "development",
       "APP_ID": "Restful-Api",
