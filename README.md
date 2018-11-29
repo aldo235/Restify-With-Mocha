@@ -115,8 +115,8 @@ in here i use user.js
                 email : 'aldo.abellto14@gmail.com',
                 name : 'aldo',
                 age : 22,
-                password : 'majorbotak',
-                confirm_password : 'majorbotak'
+                password : '1234567890',
+                confirm_password : '1234567890'
             };
             chai.request(server)
                 .post('/v1/users')
@@ -145,7 +145,7 @@ in here i use user.js
                 email : 'aldo.abellto124@gmail.com',
                 name : 'aldo',
                 age : 22,
-                password : md5('majorbotak')
+                password : md5('1234567890')
             });
             newUser.save((err,user) => {
                 chai.request(server)
@@ -177,8 +177,8 @@ in here i use user.js
                 email : 'aldo.abellto14@gmail.com',
                 name : 'aldo',
                 age : 22,
-                password : 'majorbotak',
-                confirm_password : 'majorbotak'
+                password : '1234567890',
+                confirm_password : '1234567890'
             });
             let updateUser = {
                 email : 'aldo.abellto14@gmail.com',
@@ -216,7 +216,7 @@ in here i use user.js
                 email : 'aldo.abellto1241@gmail.com',
                 name : 'aldo',
                 age : 22,
-                password : md5('majorbotak')
+                password : md5('1234567890')
             });
             newUser.save((err,user) => {
                 chai.request(server)
