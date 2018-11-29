@@ -44,7 +44,7 @@ describe('User', () => {
                 email : 'aldo.abellto14@gmail.com',
                 name : 'aldo',
                 age : 22,
-                password : 'majorbotak',
+                password : '1234567890',
                 confirm_password : '123456'
             };
             chai.request(server)
@@ -65,8 +65,8 @@ describe('User', () => {
                 email : 'aldo.abellto14@gmail.com',
                 name : 'aldo',
                 age : 22,
-                password : 'majorbotak',
-                confirm_password : 'majorbotak'
+                password : '1234567890',
+                confirm_password : '1234567890'
             };
             chai.request(server)
                 .post('/v1/users')
@@ -90,8 +90,8 @@ describe('User', () => {
                 email : 'aldo.abellto14@gmail.com',
                 name : 'aldo',
                 age : 22,
-                password : 'majorbotak',
-                confirm_password : 'majorbotak'
+                password : '1234567890',
+                confirm_password : '1234567890'
             };
             chai.request(server)
                 .post('/v1/users')
@@ -115,7 +115,7 @@ describe('User', () => {
                 email : 'aldo.abellto124@gmail.com',
                 name : 'aldo',
                 age : 22,
-                password : md5('majorbotak')
+                password : md5('1234567890')
             });
             newUser.save((err,user) => {
                 chai.request(server)
@@ -142,8 +142,8 @@ describe('User', () => {
                 email : 'aldo.abellto14@gmail.com',
                 name : 'aldo',
                 age : 22,
-                password : 'majorbotak',
-                confirm_password : 'majorbotak'
+                password : '1234567890',
+                confirm_password : '1234567890'
             });
             let updateUser = {
                 email : 'aldo.abellto14@gmail.com',
@@ -167,16 +167,16 @@ describe('User', () => {
         });
     });
     /*
-     * Test the /DELETE/:id route
+     * Test the /Del/:id route
      */
-    describe('/Delete User/:id', () => {
+    describe('/Del User/:id', () => {
         it('it should softdelete a user given the id', (done) => {
             let newUser = new User({
                 username : 'aldo2356',
                 email : 'aldo.abellto1241@gmail.com',
                 name : 'aldo',
                 age : 22,
-                password : md5('majorbotak')
+                password : md5('1234567890')
             });
             newUser.save((err,user) => {
                 chai.request(server)
