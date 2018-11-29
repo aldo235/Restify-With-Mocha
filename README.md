@@ -19,8 +19,9 @@ npm test
 ```
 ## Setting ENV Development
 
-> Edit file server.config.js
 ``` bash
+# Change database : server.config.js
+
     env: {
       "NODE_ENV": "development",
       "APP_ID": "Restful-Api",
@@ -34,4 +35,10 @@ npm test
         }
       }
     }
+    
+# Change Port : server.js
+
+let port = process.env.PORT || 8000;
+port = (process.env.NODE_ENV === 'development') ? port : 8100;
+
 ```
