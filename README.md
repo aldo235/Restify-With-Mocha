@@ -17,4 +17,22 @@ pm2 start server.config.js
 # Runing testing
 npm test
 ```
+## Setting ENV Development
 
+> Edit file server.config.js
+``` bash
+# install dependencies
+    env: {
+      "NODE_ENV": "development",
+      "APP_ID": "Restful-Api",
+      "APP_KEY": "e10adc3949ba59abbe56e057f20f883e",
+      "DB_CONNECTION": {
+        "mongodb": {
+          "driver": 'mongodb',
+          "host": 'localhost',
+          "port": 27017,
+          "database": 'restful'
+        }
+      }
+    }
+```
