@@ -1,0 +1,31 @@
+{
+  "name": "restful-api-with-restify",
+  "version": "1.0.0",
+  "description": "restful api with restify js and mocha testing",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "mocha --timeout 10000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aldo235/Restify-With-Mocha.git"
+  },
+  "homepage": "https://github.com/aldo235/Restify-With-Mocha#readme",
+  "author": "aldo abellto",
+  "license": "ISC",
+  "dependencies": {
+    "fibers": "^3.0.0",
+    "fs": "0.0.1-security",
+    "jsonwebtoken": "^8.3.0",
+    "md5": "^2.2.1",
+    "mongoose": "^5.1.6",
+    "restify": "^4.3.0",
+    "restify-jwt": "^0.4.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^2.0.1",
+    "mocha": "^2.4.5"
+  }
+}
