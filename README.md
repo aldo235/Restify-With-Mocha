@@ -17,6 +17,17 @@ pm2 start server.config.js
 # Runing testing
 npm test
 ```
+
+``` bash
+# Install Gcloud CLI
+./google-cloud-sdk/install.sh
+
+# Setup gcloud 
+./google-cloud-sdk/bin/gcloud init
+```
+
+
+
 ## Setting ENV Development
 
 ``` bash
